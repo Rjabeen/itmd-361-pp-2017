@@ -11,14 +11,16 @@
 <h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
   <header id="header">
     <nav id="navigation">
-      <!--Hint: Match navigation labels with memorable paths/URLs-->
-      <li><a href="home.html">Home</a></li>
-      <li><a href="../my-res/">Resume</a></li>
-      <li><a href="randomstuff/">Interests</a></li>
+     <ul>
+    <!--Hint: Match navigation labels with memorable paths/URLs-->
+      <li><a href="./">Home</a></li>
+      <li><a href="./resume/">Resume</a></li>
+      <li><a href="./interests/">Interests</a></li>
+     <ul>
     </nav>
   </header>
   <!--Hint: Watch for duplicate and non-semantic classes and IDs-->
-  <main id="home">
+  <main id="resume">
     <article id="primary" class="green-background">
       <h2><b>About Me</b></h2>
       <h3><i>3rd-Year ITM Undergraduate</i></h3>
@@ -46,7 +48,7 @@
       <li class="quick-facts"><p><b>Quick Facts:</b></p>
         <li class="quick-facts">Interested in cybersecurity</li>
         <li class="quick-facts">Hate cold winters</li>
-        <li class="quick-facts">Always running late</li></li>
+        <li class="quick-facts">Always running late</li>
       </ul>
   </aside>
   <footer id="footer">
