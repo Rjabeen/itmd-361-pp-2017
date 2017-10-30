@@ -50,6 +50,7 @@ arrayEach(['red','green','blue'], console.log);
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
 
+// Because variables that are arguments of the function belong to the function scope.
 function addTwo(x) {
   x = x + 2;
   return x;
