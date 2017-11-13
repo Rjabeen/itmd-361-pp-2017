@@ -19,6 +19,9 @@ body {
 }
 
 /* ===== LAYOUT STYLES ===== */
+#ringbell {
+  cursor: pointer;
+}
 
 
 /* ===== MODULAR STYLES ===== */
