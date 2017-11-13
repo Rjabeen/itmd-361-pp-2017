@@ -1,8 +1,10 @@
 $(document).ready(function() {
+  var doorbell = new Audio('media/doorbell.mp3');
+
   $("#ringbell-control").remove();
 
   function ringDoorbell() {
-    var doorbell = new Audio('media/doorbell.mp3');
+    $('#playing').show();
     doorbell.play();
   }
 
@@ -14,6 +16,11 @@ $(document).ready(function() {
     if(event.key === "d") {
       ringDoorbell();
     }
+  });
+
+  doorbell.addEventListener("ended", function(){
+    doorbell.currentTime = 0;
+    $('#playing').hide();
   });
 
 });

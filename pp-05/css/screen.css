@@ -22,6 +22,11 @@ body {
 #ringbell {
   cursor: pointer;
 }
+#playing{
+  display:none;
+  width:2em;
+  height:2em;
+}
 
 
 /* ===== MODULAR STYLES ===== */
