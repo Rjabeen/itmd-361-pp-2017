@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $("#ringbell-control").remove();
 
   function ringDoorbell() {
@@ -9,6 +8,12 @@ $(document).ready(function() {
 
   $("#ringbell").on("click", function() {
     ringDoorbell();
+  });
+
+  $(document).on("keypress", function(event) {
+    if(event.key === "d") {
+      ringDoorbell();
+    }
   });
 
 });
